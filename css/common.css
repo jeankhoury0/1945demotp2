@@ -1,0 +1,49 @@
+:root{
+    --jean-defined-black: #282a35;
+    --jean-defined-accent: #0055ab;
+}
+
+
+nav ul{
+    /* Suprimer la mise en forme d'une liste */
+    list-style: none;
+    margin: 0;
+    padding: 0;
+
+    display: flex;
+    background-color: var(--jean-defined-black);
+    height: 2rem;
+}
+
+nav a{
+    /* style qui affecte pas la dispo */
+    color: white;
+    text-decoration: none;
+    font-size: large;
+
+    padding-left: 2rem;
+    padding-right: 2rem;
+
+    display: flex;
+    align-items: center;
+    border-left: 1px solid white;
+
+}
+
+nav a:last-child{
+    border-right: 1px solid white;
+}
+
+nav a:hover{
+    background-color: var(--jean-defined-accent);
+}
+
+h1::first-letter{
+    color:var(--jean-defined-accent);
+}
+
+.active{
+    background-color: var(--jean-defined-accent);
+}
+/* image pdding maargin 
+video flex */
